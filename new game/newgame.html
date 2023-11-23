@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Slot Machine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .slot-machine {
+      margin: 50px auto;
+      max-width: 400px;
+    }
+
+    .reel {
+      display: flex;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .symbol {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 24px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slot-machine">
+  <div class="reel" id="reel1"></div>
+  <div class="reel" id="reel2"></div>
+  <div class="reel" id="reel3"></div>
+  <button onclick="spin()">Spin</button>
+</div>
+
+<script>
+  const symbols = ['🍒', '🍇', '🍊', '🍋', '🍉'];
+
+  function spin() {
+    const reels = document.querySelectorAll('.reel');
+
+    reels.style.boderradies=     100%
+    reels.forEach(reel => {
+      // Randomly select a symbol
+      const randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+      
+      // Display the symbol in the reel
+      reel.innerHTML = `<div class="symbol">${randomSymbol}</div>`;
+    });
+  }
+</script>
+
+</body>
+</html>
+

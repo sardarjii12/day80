@@ -41,19 +41,18 @@
         
 
     //   },false) 
-    //   document.getElementById('Google').querySelector('click', function (e){
-    //     e.pre()
+      document.getElementById('google').addEventListener('click', function (e){
+        e.preventDefault()
         
         
-    //   },false)
+      },false)
 
                 document.querySelector('#images').addEventListener('click', function(e){
-                    console.log(e.target.parentNode)
+                    console.log(e.target.tagName)
                     let removeIt= e.target.parentNode
                     removeIt.remove()
                 },false)
        </script>
 
-       //preventdefolt
-       //reove 2nd mathoed
+       
 </html> 

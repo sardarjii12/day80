@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+        .fatherdiv{
+            width: 500px;
+            height: 500px;
+            background-color: white ;
+            margin: auto;
+
+        }
+       
+       </style>
+</head>
+<body>
+    <div class="fatherdiv">
+    <div class="cont1">
+        <h1 class="heading1">Jd web services</h1>
+    </div>
+    <div class="senddiv">
+        <div class="sendchild" id="child1">
+            <h1>Graphic $ Motion Design</h1>
+                 <p>Monthly fee=1500/-</p>
+    <button class="button1">remove </button>
+        </div>
+        
+       
+        <div class="sendchild" id="child2">
+            <h1 style="color: red;">Full stack Development</h1>
+                 <p>Monthly fee=1500/-</p>
+                <button class="button2">remove </button> 
+    </div>
+        
+         <div class="sendchild" id="child3">
+            <h1 style="background-color: red;">App Development</h1>
+                 <p>Monthly fee=1500/-</p>
+                 <button class="button3">remove </button>
+        </div>
+       
+
+    </div>
+</div>
+</body>
+<script>
+    document.querySelector(".button3").addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+
+    })
+    document.querySelector(".button2").addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+
+    })
+    document.querySelector(".button1").addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+
+    })
+
+</script>
+</html>
